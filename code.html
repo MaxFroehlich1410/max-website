@@ -50,7 +50,7 @@
 <a class="text-sm font-medium hover:text-primary/70 dark:hover:text-white/70 transition-colors" href="#booking">Booking</a>
 </nav>
 <div class="flex items-center space-x-4">
-<a class="bg-primary text-background-light px-6 py-2.5 rounded-full text-sm font-medium hover:bg-primary/90 transition-colors" href="#anfragen">
+<a class="bg-primary text-background-light px-6 py-2.5 rounded-full text-sm font-medium hover:bg-primary/90 transition-colors" href="#booking">
                     Anfragen
                 </a>
 </div>
@@ -133,43 +133,35 @@
 </div>
 </div>
 </section>
-<section class="py-24" id="anfragen">
-<div class="max-w-2xl mx-auto bg-white/50 dark:bg-white/5 backdrop-blur-md p-8 md:p-12 rounded-[2rem] border border-primary/10 dark:border-white/10 shadow-lg">
-<h2 class="font-display text-4xl font-bold mb-2">Booking <i class="italic font-normal">anfragen</i></h2>
-<p class="text-primary/70 dark:text-white/70 mb-8">Lassen Sie uns über Ihr nächstes Event sprechen.</p>
-<form class="space-y-6">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<section class="py-24" id="booking">
+<div class="max-w-5xl mx-auto bg-white/50 dark:bg-white/5 backdrop-blur-md p-8 md:p-12 rounded-[2rem] border border-primary/10 dark:border-white/10 shadow-lg">
+<div class="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-10 items-center">
 <div>
-<label class="block text-sm font-medium mb-2" for="name">Name</label>
-<input class="w-full bg-transparent border-b border-primary/20 dark:border-white/20 focus:border-primary dark:focus:border-white focus:ring-0 px-0 py-2 transition-colors" id="name" placeholder="Max Mustermann" type="text"/>
+<h2 class="font-display text-4xl font-bold mb-2">Booking <i class="italic font-normal">Kontakt</i></h2>
+<p class="text-primary/70 dark:text-white/70 mb-8">Direkter Kontakt f&uuml;r Buchungsanfragen.</p>
+<div class="space-y-1 text-lg leading-relaxed text-primary/90 dark:text-white/90 mb-8">
+<p>kulturkraemer</p>
+<p>Verena Kraemer</p>
+<p>Trajanstr. 27</p>
+<p>50678 K&ouml;ln</p>
+<p class="pt-4">0228-47985679</p>
+<p>contact@maxfroehlich.com</p>
 </div>
-<div>
-<label class="block text-sm font-medium mb-2" for="organisation">Organisation</label>
-<input class="w-full bg-transparent border-b border-primary/20 dark:border-white/20 focus:border-primary dark:focus:border-white focus:ring-0 px-0 py-2 transition-colors" id="organisation" placeholder="Firma GmbH" type="text"/>
+<div class="space-y-4">
+<a class="inline-flex w-full sm:w-auto items-center justify-center gap-2 bg-primary text-background-light px-8 py-4 rounded-full text-base font-medium hover:bg-primary/90 transition-transform hover:-translate-y-0.5" href="tel:+4922847985679">
+<span class="material-icons text-base">call</span>
+<span>0228-47985679 anrufen</span>
+</a>
+<a class="inline-flex w-full sm:w-auto items-center justify-center gap-2 border border-primary dark:border-white text-primary dark:text-white px-8 py-4 rounded-full text-base font-medium hover:bg-primary/5 dark:hover:bg-white/5 transition-colors sm:ml-3" href="mailto:contact@maxfroehlich.com?subject=Booking%20Anfrage&body=Hallo%20Verena%2C%0A%0Aich%20mochte%20eine%20Booking-Anfrage%20stellen.">
+<span class="material-icons text-base">mail</span>
+<span>E-Mail senden</span>
+</a>
 </div>
 </div>
-<div>
-<label class="block text-sm font-medium mb-2" for="email">E-Mail</label>
-<input class="w-full bg-transparent border-b border-primary/20 dark:border-white/20 focus:border-primary dark:focus:border-white focus:ring-0 px-0 py-2 transition-colors" id="email" placeholder="hallo@firma.de" type="email"/>
+<div class="flex justify-center md:justify-end">
+<img alt="Verena Kraemer" class="w-56 h-56 md:w-64 md:h-64 object-cover rounded-full border border-primary/20 dark:border-white/20 shadow-xl" src="./Verena.png"/>
 </div>
-<div>
-<label class="block text-sm font-medium mb-2" for="anlass">Anlass</label>
-<select class="w-full bg-transparent border-b border-primary/20 dark:border-white/20 focus:border-primary dark:focus:border-white focus:ring-0 px-0 py-2 transition-colors text-primary dark:text-white" id="anlass">
-<option class="text-black" value="">Bitte wählen...</option>
-<option class="text-black" value="keynote">Keynote</option>
-<option class="text-black" value="workshop">Workshop</option>
-<option class="text-black" value="panel">Panel Diskussion</option>
-<option class="text-black" value="other">Sonstiges</option>
-</select>
 </div>
-<div>
-<label class="block text-sm font-medium mb-2" for="nachricht">Nachricht</label>
-<textarea class="w-full bg-transparent border-b border-primary/20 dark:border-white/20 focus:border-primary dark:focus:border-white focus:ring-0 px-0 py-2 transition-colors resize-none" id="nachricht" placeholder="Details zu Datum, Ort und Thema..." rows="4"></textarea>
-</div>
-<button class="w-full bg-primary text-background-light px-8 py-4 rounded-full text-base font-medium hover:bg-primary/90 transition-transform hover:-translate-y-0.5 mt-4" type="submit">
-                        Anfrage senden
-                    </button>
-</form>
 </div>
 </section>
 </main>
